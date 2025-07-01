@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>📐 Fórmula – Zona de Fresnel</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/fresnel/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/fresnel/favicon.ico" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="home.html" class="logo">🌐 Fresnel Calc</a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html"><i class="fas fa-calculator" aria-hidden="true"></i> Calculadora</a>
+            <a href="info.html"><i class="fas fa-info-circle" aria-hidden="true"></i> ¿Qué es?</a>
+            <a href="formula.html"><i class="fas fa-ruler-combined" aria-hidden="true"></i> Fórmula</a>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="card">
+        <h1>📐 Fórmula usada para calcular la Zona de Fresnel</h1>
+
+        <section class="info">
+            <p>Para calcular el radio de la primera zona de Fresnel, se usa esta fórmula:</p>
+
+            <pre>F₁ = 8.656 × √(d / f)</pre>
+
+            <p><strong>Donde:</strong></p>
+            <ul>
+                <li><strong>F₁</strong>: Radio de la zona de Fresnel en metros</li>
+                <li><strong>d</strong>: Distancia total entre antenas en kilómetros</li>
+                <li><strong>f</strong>: Frecuencia en gigahercios (GHz)</li>
+            </ul>
+
+            <p>Este valor representa el radio máximo de la zona de Fresnel en el punto medio del enlace.</p>
+
+            <!-- Imagen -->
+            <div style="text-align: center; margin-top: 20px;">
+                <img
+                    src="/fresnel/formula.png"
+                    alt="Diagrama zona de Fresnel"
+                    style="width: 50%; height: auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);"
+                />
+                <p style="font-size: 12px; color: gray;">Figura: Representación de la zona de Fresnel</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>🌐 Fresnel Calc © 2025 – Desarrollado por Cristian Druetta – ITEC Río Cuarto</p>
+            <p>
+                <a href="https://github.com/Cdruetta/Fresnel-Calc/tree/main" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> GitHub
+                </a> |
+                <a href="mailto:c.druetta@itecriocuarto.org.ar?subject=Consulta%20sobre%20Fresnel%20Calc">
+                    <i class="fas fa-envelope"></i> Contacto
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>📘 Información – Zona de Fresnel</title>
+
+    <!-- CSS con ruta absoluta correcta -->
+    <link rel="stylesheet" href="/fresnel/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/fresnel/favicon.ico" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+
+    <!-- Navbar sin icono -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="home.html" class="logo">🌐 Fresnel Calc</a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html"><i class="fas fa-calculator" aria-hidden="true"></i> Calculadora</a>
+            <a href="info.html"><i class="fas fa-info-circle" aria-hidden="true"></i> ¿Qué es?</a>
+            <a href="formula.html"><i class="fas fa-ruler-combined" aria-hidden="true"></i> Fórmula</a>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="card">
+        <h1>📘 ¿Qué es la zona de Fresnel?</h1>
+
+        <section class="info">
+            <p>
+                <i class="fas fa-signal"></i>
+                La <strong>zona de Fresnel</strong> es un área elíptica alrededor de la línea visual directa entre dos antenas. 
+                Esta zona debe estar mayormente despejada para evitar interferencias y garantizar una buena calidad de señal.
+            </p>
+
+            <p>
+                <i class="fas fa-wifi"></i>
+                Mientras más libre esté esta zona de obstáculos como árboles, edificios o torres, <strong>menor será la pérdida de señal</strong> y mayor la eficiencia del enlace.
+            </p>
+
+            <p>
+                <i class="fas fa-calculator"></i>
+                Se calcula en función de la <strong>distancia (km)</strong> entre las antenas y la <strong>frecuencia (GHz)</strong> utilizada.
+                La fórmula utilizada para obtener el radio del primer lóbulo de Fresnel es:
+            </p>
+
+            <pre><strong>F₁ = 8.656 × √(d / f)</strong></pre>
+
+            <p>
+                Donde <strong>F₁</strong> es el radio en metros, <strong>d</strong> es la distancia total en kilómetros, y <strong>f</strong> es la frecuencia en GHz.
+            </p>
+
+            <p>
+                En la práctica, se recomienda mantener al menos un <strong>60% del radio de la zona de Fresnel libre de obstáculos</strong> en el punto medio del enlace.
+            </p>
+
+            <!-- Imagen ilustrativa -->
+            <div class="imagen-ilustrativa">
+                <img
+                    src="/fresnel/fresnelAnt.png"
+                    alt="Diagrama zona de Fresnel"
+                />
+                <p class="caption">Figura: Representación del radio de la zona de Fresnel en un enlace inalámbrico</p>
+            </div>
+
+            <!-- Tabla de ejemplo -->
+            <h3>📊 Ejemplos prácticos</h3>
+            <table class="tabla-ejemplos">
+                <thead>
+                    <tr>
+                        <th>Situación</th>
+                        <th>Efecto en la señal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Zona 100% despejada</td>
+                        <td>✔️ Señal óptima</td>
+                    </tr>
+                    <tr>
+                        <td>Zona despejada al 60%</td>
+                        <td>✅ Señal aceptable</td>
+                    </tr>
+                    <tr>
+                        <td>Obstrucción en el 50% del radio</td>
+                        <td>⚠️ Posibles pérdidas e interferencias</td>
+                    </tr>
+                    <tr>
+                        <td>Obstrucción total (0%)</td>
+                        <td>❌ Enlace inestable o fallido</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>🌐 Fresnel Calc © 2025 – Desarrollado por Cristian Druetta – ITEC Río Cuarto</p>
+            <p>
+                <a href="https://github.com/Cdruetta/Fresnel-Calc/tree/main" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> GitHub
+                </a> |
+                <a href="mailto:c.druetta@itecriocuarto.org.ar?subject=Consulta%20sobre%20Fresnel%20Calc">
+                    <i class="fas fa-envelope"></i> Contacto
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+/* Tipografía general */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #e1f5fe);
+  margin: 0;
+  padding: 40px 20px;
+  color: #003366;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Contenedor tipo tarjeta */
+.card {
+  background: #fff;
+  padding: 30px;
+  max-width: 700px; /* aumentado de 420px */
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Sección explicativa */
+.info {
+  max-width: 100%;
+  margin-top: 30px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #003355;
+}
+
+/* Títulos */
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #004d66;
+  text-align: left;
+}
+
+/* Campos de entrada */
+input {
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+input:focus {
+  border-color: #0073e6;
+  outline: none;
+}
+
+/* Botones */
+.botones {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+  min-width: 100px;
+}
+
+button:hover,
+button:focus {
+  background-color: #005bb5;
+  outline: none;
+}
+
+/* Resultado */
+#resultado {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #004080;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  min-height: 24px;
+}
+
+#resultado.visible {
+  opacity: 1;
+}
+
+/* Texto de ayuda */
+.help-text {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+  display: block;
+  text-align: left;
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+  .card {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  input,
+  button {
+    width: 100%;
+  }
+
+  .botones {
+    flex-direction: column;
+  }
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-radius: 0 0 12px 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #0073e6;
+}
+
+.navbar i {
+  font-size: 1.3rem;
+  margin-left: 15px;
+}
+
+.nav-right a i {
+  margin-right: 6px;
+}
+
+/* Pie de página */
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f0f8ff;
+  text-align: center;
+  font-size: 14px;
+  color: #003366;
+  border-top: 1px solid #ccc;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer a {
+  color: #0073e6;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+body.dark-mode .footer {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark-mode .footer a {
+  color: #66b2ff;
+}
+
+/* Estilo para la imagen ilustrativa */
+.imagen-ilustrativa {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.imagen-ilustrativa img {
+  width: 60%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.imagen-ilustrativa .caption {
+  font-size: 12px;
+  color: gray;
+  margin-top: 5px;
+}
+
+/* Estilo para la tabla de ejemplos */
+.tabla-ejemplos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.tabla-ejemplos thead tr {
+  background-color: #f5f5f5;
+}
+
+.tabla-ejemplos th,
+.tabla-ejemplos td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Espaciado para encabezado h3 */
+section.info h3 {
+  margin-top: 30px;
+}
+/* Home card */
+.home-card {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.home-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.home-list li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.home-list i {
+  color: #0073e6;
+  margin-right: 8px;
+}
